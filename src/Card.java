@@ -5,7 +5,7 @@ public class Card {
 	private String name;
 
 	public Card(int value, String suit) {
-		this.value = value;
+		setValue(value);
 		switch (value) {
 		case 2:
 			name = "Two";
@@ -56,11 +56,16 @@ public class Card {
 	public String getName() {
 		return name;
 	}
-
 	public int getValue() {
 		return value;
 	}
 	// Setters
+	public void setName(int value, String suit) {
+		
+	}
+	private void setValue(int value) {
+		this.value=value;
+	}
 
 	// Special Return for my game
 	public String describe() {

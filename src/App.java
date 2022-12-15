@@ -34,7 +34,7 @@ public class App {
 		// System.out.println("--------------------------------------------------------------------");
 		// c) Using a traditional for loop, iterate 26 times and call the flip method
 		// for each player.
-
+		System.out.println("-----------------------------------------------------");
 		for (int i = 0; i < 26; i++) {
 			Card player1Card = player1.flip();
 			Card player2Card = player2.flip();
@@ -45,16 +45,16 @@ public class App {
 				player1.incrementScore();
 				System.out.println(gamePlay(player1, player2, player1Card, player2Card) + "\n" + winsRound(player1)
 						+ "\nUpdated Score: " + gameScore(player1, player2));
-				System.out.println("------------------------------------");
+				System.out.println("-----------------------------------------------------");
 			} else if (player2Card.getValue() > player1Card.getValue()) {
 				player2.incrementScore();
 				System.out.println(gamePlay(player1, player2, player1Card, player2Card) + "\n" + winsRound(player2)
 						+ "\nUpdated Score: " + gameScore(player1, player2));
-				System.out.println("------------------------------------");
+				System.out.println("-----------------------------------------------------");
 			} else {
 				System.out.println(gamePlay(player1, player2, player1Card, player2Card) + "\nDRAW \nUpdated Score: "
 						+ gameScore(player1, player2));
-				System.out.println("------------------------------------");
+				System.out.println("-----------------------------------------------------");
 			}
 
 		}
