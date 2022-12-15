@@ -67,6 +67,5 @@ public class Card {
 		return getName() + " - " + getValue();
 	}
 
-	// Setters
 
 }
