@@ -6,6 +6,18 @@ public class Card {
 
 	public Card(int value, String suit) {
 		setValue(value);
+		setName(value, suit);
+	}
+
+	// Getters
+	public String getName() {
+		return name;
+	}
+	public int getValue() {
+		return value;
+	}
+	// Setters
+	private void setName(int value, String suit) {
 		switch (value) {
 		case 2:
 			name = "Two";
@@ -49,19 +61,6 @@ public class Card {
 		}
 
 		name += " of " + suit;
-
-	}
-
-	// Getters
-	public String getName() {
-		return name;
-	}
-	public int getValue() {
-		return value;
-	}
-	// Setters
-	public void setName(int value, String suit) {
-		
 	}
 	private void setValue(int value) {
 		this.value=value;
