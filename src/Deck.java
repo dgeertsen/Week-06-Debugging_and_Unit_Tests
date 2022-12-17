@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Deck {
 
+	//Encapsulate 
 	private List<Card> cards = new ArrayList<Card>();
 	private List<String> suits = Arrays.asList("Diamonds", "Hearts", "Clubs", "Spades");
 
@@ -18,14 +19,18 @@ public class Deck {
 
 	}
 
+	// Shuffle our Deck
 	public void shuffle() {
 		Collections.shuffle(cards);
 	}
-
+	
+	// Removes card from ArrayList and returns it
 	public Card draw() {
 		return cards.remove(0);
 	}
-
+	
+	
+	// Prints out deck, to show we arent palying tricks
 	public void describe() {
 		for (Card card : cards) {
 			System.out.println(card.describe());

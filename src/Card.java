@@ -1,9 +1,12 @@
 
 public class Card {
 
+	//Encapsulate 
 	private int value;
 	private String name;
 
+	
+	// Constructor
 	public Card(int value, String suit) {
 		setValue(value);
 		setName(value, suit);
@@ -16,7 +19,7 @@ public class Card {
 	public int getValue() {
 		return value;
 	}
-	// Setters
+	// Setters but make private using encaspulation. Only call in constructor
 	private void setName(int value, String suit) {
 		switch (value) {
 		case 2:

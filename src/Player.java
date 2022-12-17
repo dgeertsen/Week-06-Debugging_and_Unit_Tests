@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
+	
+	//Encapsulate 
 	private int score;
 	private String name;
 	private List<Card> hand = new ArrayList<Card>();
@@ -27,6 +29,7 @@ public class Player {
 	}
 
 	// Draw Card
+	// Adds a card from the Deck to our hand ArrayList
 	public void draw(Deck deck) {
 		hand.add(deck.draw());
 	}
@@ -49,5 +52,5 @@ public class Player {
 		return name + ": " + score;
 	}
 
-	// No Setters because we don't want to player to change score or name
+	
 }

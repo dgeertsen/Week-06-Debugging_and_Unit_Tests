@@ -38,7 +38,7 @@ public class App {
 		for (int i = 0; i < 26; i++) {
 			Card player1Card = player1.flip();
 			Card player2Card = player2.flip();
-
+			
 			// d) Compare the value of each card returned by the two player’s flip methods.
 			// Call the incrementScore method on the player whose card has the higher value.
 			if (player1Card.getValue() > player2Card.getValue()) {
