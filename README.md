@@ -8,6 +8,6 @@
 * [Java](https://docs.oracle.com/en/java/) - The Backend Langauge
 * [Maven](https://maven.apache.org/) - Dependency Management
 
-## Authors
+## Author
 
 * **Devon Geertsen**  - [dgeertrsen](https://github.com/dgeertsen)
